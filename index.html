@@ -7517,8 +7517,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center><img alt="No description has been provided for this image" src="https://i.imgur.com/zRrFdsf.png" width="700"/></center>
-<a href="https://colab.research.google.com/github/CienciaDeDatosEspacial/spatial_multivar/blob/main/index.ipynb" target="_blank">
+<center><img alt="No description has been provided for this image" src="https://github.com/DACSS-Spatial/data_forSpatial/raw/main/logo.png" width="700"/></center>
+<a href="https://colab.research.google.com/github/DACSS-Spatial/multivariate_geostats/blob/main/index.ipynb" target="_blank">
 <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
 </img></a>
 <h1 id="Multivariate-Geostats:-Beyond-classical-Clustering-and-Regression">Multivariate Geostats: Beyond classical Clustering and Regression<a class="anchor-link" href="#Multivariate-Geostats:-Beyond-classical-Clustering-and-Regression">¶</a></h1>
@@ -7557,7 +7557,7 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
 
-<span class="n">peruDataLink</span><span class="o">=</span><span class="s2">"https://github.com/CienciaDeDatosEspacial/dataSets/raw/refs/heads/main/PERU/PeruMaps.gpkg"</span>
+<span class="n">peruDataLink</span><span class="o">=</span><span class="s2">"https://github.com/DACSS-Spatial/data_forSpatial/raw/refs/heads/main/PERU/PeruMaps.gpkg"</span>
 <span class="n">DisMap</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">peruDataLink</span><span class="p">,</span><span class="n">layer</span><span class="o">=</span><span class="s1">'good_geom'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7709,7 +7709,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="o">.</span><span class="n">columns</span>
@@ -7723,7 +7723,7 @@ Datum: World Geodetic System 1984 ensemble
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Index(['DEPARTAMENTO', 'PROVINCIA', 'DISTRITO', 'ubigeo', 'Poblacion',
        'IDH2019', 'Educ_sec_comp2019_pct', 'NBI2017_pct',
@@ -7749,7 +7749,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">selected_variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Educ_sec_comp2019_pct'</span><span class="p">,</span><span class="s1">'NBI2017_pct'</span><span class="p">,</span> <span class="s1">'Viv_sin_serv_hig2017_pct'</span><span class="p">]</span>
@@ -7774,7 +7774,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="p">[</span><span class="n">selected_variables</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -7788,7 +7788,7 @@ Datum: World Geodetic System 1984 ensemble
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7885,7 +7885,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="p">[</span><span class="n">selected_variables</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
@@ -7899,7 +7899,7 @@ Datum: World Geodetic System 1984 ensemble
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7967,7 +7967,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## from complete to 'incomplete'</span>
@@ -7993,7 +7993,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="p">[</span><span class="n">selected_variables</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">'box'</span><span class="p">)</span>
@@ -8007,7 +8007,7 @@ Datum: World Geodetic System 1984 ensemble
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;Axes: &gt;</pre>
 </div>
@@ -8043,7 +8043,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -8079,7 +8079,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">deficit_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Educ_sec_incomp2019_pct'</span><span class="p">,</span><span class="s1">'NBI2017_pct'</span><span class="p">,</span> <span class="s1">'Viv_sin_serv_hig2017_pct'</span><span class="p">]</span>
@@ -8097,7 +8097,7 @@ Datum: World Geodetic System 1984 ensemble
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8202,7 +8202,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># as a result:</span>
@@ -8217,7 +8217,7 @@ Datum: World Geodetic System 1984 ensemble
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8284,7 +8284,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#prepare the dict</span>
@@ -8301,7 +8301,7 @@ Datum: World Geodetic System 1984 ensemble
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'Educ_sec_incomp2019_pct': 'Education_deficit_pct',
  'NBI2017_pct': 'BasicNeeds_deficit_pct',
@@ -8315,7 +8315,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">changes</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -8340,7 +8340,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span>
@@ -8390,7 +8390,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">KMeans</span>
@@ -8409,7 +8409,7 @@ Datum: World Geodetic System 1984 ensemble
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># see distribution of districts</span>
@@ -8424,7 +8424,7 @@ Datum: World Geodetic System 1984 ensemble
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>deficit_k5
 3    662
@@ -8466,7 +8466,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># for mos cases except spatial kmeans</span>
@@ -8498,7 +8498,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">peru_perim_graph</span><span class="p">),</span><span class="nb">type</span><span class="p">(</span><span class="n">peru_perim</span><span class="p">)</span>
@@ -8512,7 +8512,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(libpysal.graph.base.Graph, libpysal.weights.weights.W)</pre>
 </div>
@@ -8546,7 +8546,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">spopt.region</span><span class="w"> </span><span class="kn">import</span> <span class="n">RegionKMeansHeuristic</span> <span class="k">as</span> <span class="n">RKMeans</span>
@@ -8578,7 +8578,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="p">[</span><span class="s1">'deficit_k5R'</span><span class="p">]</span> <span class="o">=</span> <span class="n">RKMeans_model</span><span class="o">.</span><span class="n">labels_</span>
@@ -8593,7 +8593,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>deficit_k5R
 4    738
@@ -8622,7 +8622,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">spopt.region</span><span class="w"> </span><span class="kn">import</span> <span class="n">AZP</span>
@@ -8656,7 +8656,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="p">[</span><span class="s1">'deficit_azpR'</span><span class="p">]</span> <span class="o">=</span> <span class="n">azp_model</span><span class="o">.</span><span class="n">labels_</span>
@@ -8671,7 +8671,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>deficit_azpR
 1.0    509
@@ -8691,7 +8691,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="3.-The-Smart-gardener:-Skater">3. The Smart gardener: Skater<a class="anchor-link" href="#3.-The-Smart-gardener:-Skater">¶</a></h3><p>The "Spatial 'K'luster Analysis by Tree Edge Removal" is avery interesting model based on the Minimum Spanning Tree (take a look: <a href="https://colab.research.google.com/drive/1CQwjJR6i_3X_8izLsDt-TPfbLtpCnN5T?usp=sharing">MST</a>).</p>
+<h3 id="3.-The-Smart-gardener:-Skater">3. The Smart gardener: Skater<a class="anchor-link" href="#3.-The-Smart-gardener:-Skater">¶</a></h3><p>The "Spatial 'K'luster Analysis by Tree Edge Removal" is avery interesting model based on the Minimum Spanning Tree (take a look: <a href="https://colab.research.google.com/drive/13KamN7ITezGsojlLYiRPNCSYEnx9qx01?usp=sharing">MST</a>).</p>
 <p>We can easily compute this regression like this:</p>
 </div>
 </div>
@@ -8701,7 +8701,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">spopt.region</span><span class="w"> </span><span class="kn">import</span> <span class="n">Skater</span>
@@ -8735,7 +8735,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="p">[</span><span class="s1">'deficit_skaterR'</span><span class="p">]</span> <span class="o">=</span> <span class="n">skater_model</span><span class="o">.</span><span class="n">labels_</span>
@@ -8750,7 +8750,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>deficit_azpR
 1.0    509
@@ -8783,7 +8783,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">esda</span><span class="w"> </span><span class="kn">import</span> <span class="n">shape</span> <span class="k">as</span> <span class="n">compactness</span>
@@ -8844,7 +8844,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn</span><span class="w"> </span><span class="kn">import</span> <span class="n">metrics</span>
@@ -8886,7 +8886,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Concatenate the two DataFrames column-wise (axis=1)</span>
@@ -8914,7 +8914,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9055,7 +9055,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"deficit_k5"</span><span class="p">)[</span><span class="n">clusterNames</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -9069,7 +9069,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9143,7 +9143,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DisMap</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"deficit_skaterR"</span><span class="p">)[</span><span class="n">clusterNames</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -9157,7 +9157,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9326,7 +9326,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kmeans_labels</span> <span class="o">=</span> <span class="p">{</span>
@@ -9357,7 +9357,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -9429,7 +9429,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kmeans_means</span><span class="o">=</span><span class="n">DisMap</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"deficit_k5"</span><span class="p">)[</span><span class="n">clusterNames</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -9453,7 +9453,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9562,7 +9562,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.spatial.distance</span><span class="w"> </span><span class="kn">import</span> <span class="n">pdist</span><span class="p">,</span>  <span class="n">squareform</span>
@@ -9587,7 +9587,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9773,7 +9773,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Select K rows and S columns</span>
@@ -9792,7 +9792,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9883,7 +9883,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> <span class="c1"># &lt;-- Need this for linkage and np.ix_ if you use it later</span>
@@ -9968,7 +9968,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dep_var_name</span><span class="o">=</span><span class="s1">'BasicNeeds_deficit_pct'</span>
@@ -10001,7 +10001,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pysal.model</span><span class="w"> </span><span class="kn">import</span> <span class="n">spreg</span>
@@ -10020,7 +10020,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10099,7 +10099,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ols_model</span><span class="o">.</span><span class="n">ar2</span> <span class="c1"># closer to 1 the better</span>
@@ -10113,7 +10113,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.float64(0.5301902863255213)</pre>
 </div>
@@ -10125,7 +10125,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ols_model</span><span class="o">.</span><span class="n">aic</span> <span class="c1"># smaller the better</span>
@@ -10139,7 +10139,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.float64(14775.887907529901)</pre>
 </div>
@@ -10151,7 +10151,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">ols_model</span><span class="o">.</span><span class="n">sig2</span><span class="p">)</span> <span class="c1"># S.E. of Regression - # smaller the better</span>
@@ -10165,7 +10165,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.float64(12.539968014149354)</pre>
 </div>
@@ -10190,7 +10190,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ols_model</span><span class="o">.</span><span class="n">f_stat</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">ols_model</span><span class="o">.</span><span class="n">f_stat</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="mf">0.05</span> <span class="c1"># is significant?</span>
@@ -10204,7 +10204,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(np.float64(1056.16745032191), np.True_)</pre>
 </div>
@@ -10260,7 +10260,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># is there collinearity?</span>
@@ -10275,7 +10275,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>False</pre>
 </div>
@@ -10287,7 +10287,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># is the normality?</span>
@@ -10302,7 +10302,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.False_</pre>
 </div>
@@ -10314,7 +10314,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># is there homocedasticity?</span>
@@ -10329,7 +10329,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.False_</pre>
 </div>
@@ -10364,7 +10364,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">argsRegre_W</span><span class="o">=</span><span class="n">argsRegre</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1"># copied dict</span>
@@ -10397,7 +10397,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ols_model_with_W</span> <span class="o">=</span> <span class="n">spreg</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span> <span class="o">**</span><span class="n">argsRegre_W</span><span class="p">,</span>                 
@@ -10425,7 +10425,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Do any of the regression terms (X, Y, error) is being affected by behavior of neighbors</span>
@@ -10440,7 +10440,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.True_</pre>
 </div>
@@ -10480,7 +10480,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ols_model_with_W</span><span class="o">.</span><span class="n">rlm_lag</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="mf">0.05</span>
@@ -10494,7 +10494,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.False_</pre>
 </div>
@@ -10519,7 +10519,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ols_model_with_W</span><span class="o">.</span><span class="n">rlm_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="mf">0.05</span>
@@ -10533,7 +10533,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.True_</pre>
 </div>
@@ -10558,7 +10558,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ols_model_with_W</span><span class="o">.</span><span class="n">rlm_wx</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="mf">0.05</span>
@@ -10572,7 +10572,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.True_</pre>
 </div>
@@ -10617,7 +10617,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">SAR_model</span> <span class="o">=</span> <span class="n">spreg</span><span class="o">.</span><span class="n">GM_Lag</span><span class="p">(</span>
@@ -10645,7 +10645,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">SAR_model</span><span class="o">.</span><span class="n">output</span> <span class="c1"># this is rho: W_BasicNeeds_deficit_pct</span>
@@ -10659,7 +10659,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10795,7 +10795,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">spreg.sputils</span><span class="w"> </span><span class="kn">import</span> <span class="n">spmultiplier</span>
@@ -10826,7 +10826,7 @@ Name: count, dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10926,7 +10926,7 @@ Overall regional effect ≈ <strong>0.36 percentage points</strong> increase in 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Anselin-Kelejian Test</span>
@@ -10941,7 +10941,7 @@ Overall regional effect ≈ <strong>0.36 percentage points</strong> increase in 
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>((np.float64(132.5336457231241), np.float64(1.1435212836764767e-30)), np.True_)</pre>
 </div>
@@ -10979,7 +10979,7 @@ Overall regional effect ≈ <strong>0.36 percentage points</strong> increase in 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># GM - uses a Generalized Moments (GM) estimator that is robust to heteroskedasticity.</span>
@@ -11005,7 +11005,7 @@ Overall regional effect ≈ <strong>0.36 percentage points</strong> increase in 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">SEM_model</span><span class="o">.</span><span class="n">output</span>
@@ -11019,7 +11019,7 @@ Overall regional effect ≈ <strong>0.36 percentage points</strong> increase in 
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11156,7 +11156,7 @@ Overall regional effect ≈ <strong>0.36 percentage points</strong> increase in 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">slx_model</span> <span class="o">=</span> <span class="n">spreg</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="o">**</span><span class="n">argsRegre_W</span><span class="p">,</span>
@@ -11174,7 +11174,7 @@ Overall regional effect ≈ <strong>0.36 percentage points</strong> increase in 
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11355,7 +11355,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># need to control error term? / # need to control Y?</span>
@@ -11370,7 +11370,7 @@ $$</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(np.False_, np.True_)</pre>
 </div>
@@ -11417,7 +11417,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pysal.model.spreg</span><span class="w"> </span><span class="kn">import</span> <span class="n">GM_Error_Het</span>
@@ -11437,7 +11437,7 @@ $$</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11635,7 +11635,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sac_model</span> <span class="o">=</span><span class="n">spreg</span><span class="o">.</span><span class="n">GM_Combo_Het</span><span class="p">(</span><span class="o">**</span><span class="n">argsRegre</span><span class="p">,</span>
@@ -11654,7 +11654,7 @@ $$</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11795,7 +11795,7 @@ $$Y = \rho W Y + X\beta + W X \theta + \epsilon$$<ul>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sdm_model</span> <span class="o">=</span> <span class="n">spreg</span><span class="o">.</span><span class="n">GM_Lag</span><span class="p">(</span><span class="o">**</span><span class="n">argsRegre_W</span><span class="p">,</span>
@@ -11909,7 +11909,7 @@ Omitted since spatial autoregressive parameter is outside the boundary (-1, 1).
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Common Factor Hypothesis test</span>
@@ -11924,7 +11924,7 @@ Omitted since spatial autoregressive parameter is outside the boundary (-1, 1).
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.True_</pre>
 </div>
@@ -11961,7 +11961,7 @@ Therefore, the SDM simplifies to <strong>SEM</strong> — the WX terms are not s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">combo_model</span><span class="o">=</span><span class="n">spreg</span><span class="o">.</span><span class="n">GM_Combo_Het</span><span class="p">(</span><span class="o">**</span><span class="n">argsRegre</span><span class="p">,</span>
@@ -12030,7 +12030,7 @@ Instruments: W2_Education_deficit_pct, W2_Sanitation_deficit_pct
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># List all variables ending with "_model"</span>
@@ -12097,7 +12097,7 @@ Instruments: W2_Education_deficit_pct, W2_Sanitation_deficit_pct
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Selecting the appropriate spatial model requires careful judgment; best-fit statistics should not be the sole criterion. Complex specifications, such as the Spatial Durbin Model (SDM), can produce inflated fit values (e.g., Pseudo-R² $\approx 0.81$ in our SDM) often driven by interdependent spatial terms. Crucially, our SDM estimation yielded an <strong>unstable spatial lag parameter ($\rho &gt; 1$)</strong>, rendering its calculated impacts unreliable and policy-irrelevant.</p>
 <p>For robust policy work, interpretability and causal clarity matter more than marginal gains in fit. We therefore prioritize a model specification that directly addresses the significant spatial processes identified by our diagnostics ($\mathbf{W}\mathbf{X}\theta$ spillovers and $\lambda \mathbf{W}\mathbf{u}$ error clustering) while excluding the unstable endogenous feedback term ($\rho \mathbf{W}\mathbf{Y}$).</p>
-<p><strong>Practically, this leads to the Spatial Lag of X with Error (SLX-Error) model.</strong> This specification isolates the distinct intervention effects (direct effects $\mathbf{X}\beta$ and cross-boundary spillovers $\mathbf{W}\mathbf{X}\theta$) while statistically controlling the high degree of unobserved regional structure ($\lambda \approx 0.77$). This approach provides the clearest and most statistically sound basis for translating our deficit findings into actionable policy guidance."</p>
+<p><strong>Practically, this leads to the Spatial Lag of X with Error (SLX-Error) model.</strong> This specification isolates the distinct intervention effects (direct effects $\mathbf{X}\beta$ and cross-boundary spillovers $\mathbf{W}\mathbf{X}\theta$) while statistically controlling the high degree of unobserved regional structure ($\lambda \approx 0.77$). This approach provides the clearest and most statistically sound basis for translating our deficit findings into actionable policy guidance.</p>
 </div>
 </div>
 </div>
